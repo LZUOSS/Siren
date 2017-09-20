@@ -6,6 +6,10 @@
 .preview {
     padding: 3em;
 }
+
+.preview h1.header {
+    font-size: 2.5em;
+}
 /* customized */
 .hidden.menu {
     display: none;
