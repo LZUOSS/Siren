@@ -40,5 +40,5 @@
 
 ### Reference
 
-* http://www.semantic-ui.cn/examples/homepage.html
+* http://www.semantic-ui.cn
 
