@@ -961,16 +961,16 @@ a.ui.basic.brown.label:hover {
 
 .ui.grey.labels .label,
 .ui.grey.label {
-  background-color: #A0A0A0 !important;
-  border-color: #A0A0A0 !important;
+  background-color: #273C50 !important;
+  border-color: #273C50 !important;
   color: #FFFFFF !important;
 }
 
 /* Link */
 .ui.grey.labels .label:hover,
 a.ui.grey.label:hover {
-  background-color: #adadad !important;
-  border-color: #adadad !important;
+  background-color: #2f4961 !important;
+  border-color: #2f4961 !important;
   color: #FFFFFF !important;
 }
 
@@ -988,30 +988,30 @@ a.ui.grey.label:hover {
 /* Basic */
 .ui.basic.grey.label {
   background-color: #FFFFFF !important;
-  color: #A0A0A0 !important;
-  border-color: #A0A0A0 !important;
+  color: #273C50 !important;
+  border-color: #273C50 !important;
 }
 .ui.basic.grey.labels a.label:hover,
 a.ui.basic.grey.label:hover {
   background-color: #FFFFFF !important;
-  color: #adadad !important;
-  border-color: #adadad !important;
+  color: #2f4961 !important;
+  border-color: #2f4961 !important;
 }
 
 /*--- Black ---*/
 
 .ui.black.labels .label,
 .ui.black.label {
-  background-color: #000000 !important;
-  border-color: #000000 !important;
+  background-color: #1B2937 !important;
+  border-color: #1B2937 !important;
   color: #FFFFFF !important;
 }
 
 /* Link */
 .ui.black.labels .label:hover,
 a.ui.black.label:hover {
-  background-color: #0d0d0d !important;
-  border-color: #0d0d0d !important;
+  background-color: #233648 !important;
+  border-color: #233648 !important;
   color: #FFFFFF !important;
 }
 
@@ -1029,14 +1029,14 @@ a.ui.black.label:hover {
 /* Basic */
 .ui.basic.black.label {
   background-color: #FFFFFF !important;
-  color: #000000 !important;
-  border-color: #000000 !important;
+  color: #1B2937 !important;
+  border-color: #1B2937 !important;
 }
 .ui.basic.black.labels a.label:hover,
 a.ui.basic.black.label:hover {
   background-color: #FFFFFF !important;
-  color: #0d0d0d !important;
-  border-color: #0d0d0d !important;
+  color: #233648 !important;
+  border-color: #233648 !important;
 }
 
 /*-------------------

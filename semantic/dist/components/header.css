@@ -547,13 +547,13 @@ a.ui.inverted.brown.header:hover {
 /*--- Grey ---*/
 
 .ui.grey.header {
-  color: #A0A0A0 !important;
+  color: #273C50 !important;
 }
 a.ui.grey.header:hover {
-  color: #adadad !important;
+  color: #2f4961 !important;
 }
 .ui.grey.dividing.header {
-  border-bottom: 2px solid #A0A0A0;
+  border-bottom: 2px solid #273C50;
 }
 
 /* Inverted */

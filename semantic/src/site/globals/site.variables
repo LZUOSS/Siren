@@ -3,7 +3,7 @@
 *******************************/
 
 @primaryColor   : #2B4B6C;
-
+@secondaryColor : @grey;
 @red            : #800000;
 @orange         : #FE9A76;
 @yellow         : #FFD700;
@@ -15,5 +15,5 @@
 @purple         : #B413EC;
 @pink           : #FF1493;
 @brown          : #A52A2A;
-@grey           : #A0A0A0;
-@black          : #000000;
+@grey           : #273C50;
+@black          : #1B2937;

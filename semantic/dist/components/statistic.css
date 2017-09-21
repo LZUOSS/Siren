@@ -106,7 +106,7 @@
   font-size: 4rem;
   font-weight: normal;
   line-height: 1em;
-  color: #000000;
+  color: #1B2937;
   text-transform: uppercase;
   text-align: center;
 }
@@ -375,7 +375,7 @@
 .ui.grey.statistics .statistic > .value,
 .ui.statistics .grey.statistic > .value,
 .ui.grey.statistic > .value {
-  color: #A0A0A0;
+  color: #273C50;
 }
 
 /*--------------
