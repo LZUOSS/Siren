@@ -3,3 +3,17 @@
 *******************************/
 
 @primaryColor   : #2B4B6C;
+
+@red            : #800000;
+@orange         : #FE9A76;
+@yellow         : #FFD700;
+@olive          : #32CD32;
+@green          : #006256;
+@teal           : #008080;
+@blue           : #00486E;
+@violet         : #EE82EE;
+@purple         : #B413EC;
+@pink           : #FF1493;
+@brown          : #A52A2A;
+@grey           : #A0A0A0;
+@black          : #000000;
