@@ -1,7 +1,7 @@
 
 /* customized */
 .whitebox {
-    height: 3em;
+    height: 4em;
 }
 .preview {
     padding: 3em;
@@ -15,8 +15,10 @@
     font-size: 2.5em;
 }
 
+
 .heading h1 {
     font-size: 2.4em;
+    margin-bottom: 1em;
 }
 /* customized */
 .hidden.menu {
@@ -27,6 +29,7 @@
     min-height: 600px;
     padding: 1em 0em;
 }
+
 
 .masthead .logo.item img {
     margin-right: 1em;
@@ -42,6 +45,7 @@
     font-size: 4em;
     font-weight: normal;
 }
+
 
 .masthead h2 {
     font-size: 1.7em;
@@ -112,4 +116,27 @@
         margin-top: 0.5em;
         font-size: 1.5em;
     }
+}
+
+
+
+.masthead.segment-specific {
+    min-height: 300px;
+    padding: 1em 0em;
+}
+
+.masthead.segment-specific h1.ui.header {
+
+    margin-top: 1em;
+    margin-bottom: 0em;
+    font-size: 4em;
+    font-weight: normal;
+}
+
+
+.masthead.segment-specific h2.ui.header {
+    margin-top: 1em;
+    margin-bottom: 0em;
+    font-size: 3em;
+    font-weight: normal;
 }

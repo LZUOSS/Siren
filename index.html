@@ -4,7 +4,6 @@
 
 <head>
   <meta charset="utf-8">
-
   <title>OSS-LZU | 兰州大学开源社区</title>
   <meta name="description" content="OSS-LZU">
   <meta name="author" content="Huzi Cheng @OSS-LZU">
@@ -103,40 +102,30 @@
           <div class="row">
 
             <div class="column">
-                <a href="http://google.com" class="ui medium image">
+              <a href="http://google.com" class="ui medium image">
                   <img class="ui small image middle aligned" src="img/image.png">
                 </a>
               <h3>Projects</h3>
             </div>
             <div class="column">
-                <a href="http://google.com" class="ui medium image">
+              <a href="http://google.com" class="ui medium image">
                   <img class="ui small image middle aligned" src="img/image.png">
                 </a>
               <h3>Mirror</h3>
             </div>
             <div class="column">
-                <a href="http://google.com" class="ui medium image">
+              <a href="http://google.com" class="ui medium image">
                   <img class="ui small image middle aligned" src="img/image.png">
                 </a>
               <h3>Members</h3>
             </div>
             <div class="column">
-                <a href="http://google.com" class="ui medium image">
+              <a href="http://google.com" class="ui medium image">
                   <img class="ui small image middle aligned" src="img/image.png">
                 </a>
               <h3>Archive</h3>
             </div>
           </div>
-
-
-
-          <!--<div class="column">
-                    <h3>"I shouldn't have gone with their competitor."</h3>
-                    <p>
-                      <img src="assets/images/avatar/nan.jpg" class="ui avatar image"> <b>Nan</b> Chief Fun Officer Acme Toys
-                    </p>
-                  </div>-->
-
         </div>
       </div>
     </div>
@@ -235,7 +224,6 @@
       </div>
     </div>
 
-
     <div class="ui vertical stripe quote segment">
 
       <div class="ui equal width stackable internally celled grid">
@@ -243,20 +231,16 @@
           <div class="center aligned row">
 
             <div class="column">
-              <h3>今日开源言论</h3>
-              <h5>随机抓取自 from www.brainyquote.com，项目见____</h5>
-              <p>The Internet browser is the most susceptible to viruses. The browser is naive about downloading and executing
-                software. Google is trying to help by releasing the Chrome browser as open source.</p>
-              <h4>--by Linus Torvalds</h4>
+              <h3>开源灌水板<i data-title="Open Whisper" data-content="这是我们的一个项目，你可以发送自己想说的话，它将会被加入到展示列表里，然后被流动展示出来" class="info circle icon quoteinfo"></i></h3>
+              <h5>来源: 1. 随机抓取自 www.brainyquote.com，2. 你想说的话. 点击此处扯一嗓子吧</h5>
+              <p><em>
+                  The Internet browser is the most susceptible to viruses. The browser is naive about downloading and executing
+                  software. Google is trying to help by releasing the Chrome browser as open source.
+                </em>
+              </p>
+              <h4><em>Linus Torvalds</em></h4>
             </div>
           </div>
-          <!--<div class="column">
-            <h3>"I shouldn't have gone with their competitor."</h3>
-            <p>
-              <img src="assets/images/avatar/nan.jpg" class="ui avatar image"> <b>Nan</b> Chief Fun Officer Acme Toys
-            </p>
-          </div>-->
-
         </div>
       </div>
     </div>
@@ -308,9 +292,17 @@
   //preview-title
   //announcement-text
   $(function () {
+    // ads
+    console.log(
+      "wow! \n It seems you're the guy who is interested in web security or web development!\n So, Why not join us to find more fun? \n mail to :xxxx@xxx.cn!"
+    );
+
     var len = 150; // 超過50個字以"..."取代
     var title_len = 25;
     var ann_len = 70;
+    //popup a info 
+    $('.quoteinfo')
+      .popup();
 
     $(".preview-text").each(function (i) {
       if ($(this).text().length > len) {
