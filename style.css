@@ -26,6 +26,8 @@
 }
 
 .masthead.segment {
+    background-position: center !important; 
+    background-image: url(./img/bg.png) !important;
     min-height: 550px;
     padding: 1em 0em;
 }
@@ -139,4 +141,8 @@
     margin-bottom: 0em;
     font-size: 3em;
     font-weight: normal;
+}
+
+.hidb {
+    border-width: 0px !important;
 }

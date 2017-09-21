@@ -12,7 +12,7 @@
 * Mirror 镜像站
 * Members 成员页面
 * Archive 存档
-* .hide 独立页面（纳新，SFD等活动，不在导航栏里展示，但是留下入口）
+* .hide 独立页面（纳新，SFD等活动，不在导航里展示，但是留下入口）
 
 
 
@@ -31,6 +31,12 @@
 * 页脚 页首处的 Logo 需要载入
 * 移动端下滑后的 fix navbar 需要取消掉
 * *Open Whisper* 小留言板项目： 具体可以再讨论
+
+
+
+# 修改说明
+
+本项目基于 semantic-ui，需要先安装对应组件
 
 ### Reference
 
