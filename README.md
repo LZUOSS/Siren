@@ -31,14 +31,15 @@
 * 页脚 页首处的 Logo 需要载入
 * 移动端下滑后的 fix navbar 需要取消掉
 * *Open Whisper* 小留言板项目： 具体可以再讨论
+* 社区目前站点的 dokuwiki 和 wordpress 博客内容的迁移
 
 
 
-# 修改说明
+### 修改说明
 
 本项目基于 semantic-ui，需要先安装对应组件
 
 ### Reference
 
 * http://www.semantic-ui.cn
-
+* http://tryshchenko.com/archives/moving-from-wordpress-to-static-html-using-hexo/
