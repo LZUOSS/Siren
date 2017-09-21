@@ -1,0 +1,186 @@
+<!doctype html>
+
+<html lang="zh">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>OSS-LZU | 兰州大学开源社区</title>
+  <meta name="description" content="OSS-LZU">
+  <meta name="author" content="Huzi Cheng @OSS-LZU">
+  <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="semantic/dist/components/visibility.js"></script>
+  <script src="semantic/dist/components/sidebar.js"></script>
+  <script src="semantic/dist/semantic.js"></script>
+  <script>
+    $(document)
+      .ready(function () {
+        $('.fixed.menu').transition('fade out');
+
+        // fix menu when passed
+        $('.masthead')
+          .visibility({
+            once: false,
+            onBottomPassed: function () {
+              $('.fixed.menu').transition('fade in');
+            },
+            onBottomPassedReverse: function () {
+              $('.fixed.menu').transition('fade out');
+            }
+          });
+
+        // create sidebar and attach to menu open
+        $('.ui.sidebar')
+          .sidebar('attach events', '.toc.item');
+
+      });
+  </script>
+</head>
+
+<body>
+  <!-- Following Menu -->
+  <div class="ui large top fixed menu transition visible" style="display: flex !important;">
+    <div class="ui container">
+      <a class="item active">OSS@LZU </a>
+      <a class="item">新闻 </a>
+      <a class="item">项目 </a>
+      <a class="item">镜像 </a>
+      <a class="item">成员 </a>
+      <a class="item">存档 </a>
+      <a class="item right">Logo </a>
+
+    </div>
+  </div>
+
+  <!-- Sidebar Menu -->
+  <div class="ui vertical inverted sidebar menu left">
+      <a class="item active">OSS@LZU </a>
+      <a class="item">新闻 </a>
+      <a class="item">项目 </a>
+      <a class="item">镜像 </a>
+      <a class="item">成员 </a>
+      <a class="item">存档 </a>
+      <a class="item right">Logo </a>
+  </div>
+
+
+  <!-- Page Contents -->
+  <div class="pusher">
+    <div class="ui inverted vertical masthead center aligned segment">
+
+      <div class="ui container">
+        <div class="ui large secondary inverted pointing menu">
+          <a class="toc item">
+                  <i class="sidebar icon"></i>
+                </a>
+          <a class="item active">OSS-LZU </a>
+          <a class="item">News </a>
+          <a class="item">Projects </a>
+          <a class="item">Mirrors </a>
+          <a class="item">Members </a>
+          <a class="item">Archive </a>
+          <a class="item right">Logo </a>
+        </div>
+      </div>
+
+      <div class="ui text container">
+        <h1 class="ui inverted header">
+          Technology & Passion
+        </h1>
+        <h2>Open Source Society, Lanzhou University</h2>
+        <div class="ui huge primary button">Get Started <i class="right arrow icon"></i></div>
+      </div>
+
+    </div>
+
+    <div class="ui vertical stripe segment">
+      <div class="ui middle aligned stackable grid container">
+        <div class="row">
+          <div class="eight wide column">
+            <h3 class="ui header">We Help Companies and Companions</h3>
+            <p>We can give your company superpowers to do things that they never thought possible. Let us delight your customers
+              and empower your needs...through pure data analytics.</p>
+            <h3 class="ui header">We Make Bananas That Can Dance</h3>
+            <p>Yes that's right, you thought it was the stuff of dreams, but even bananas can be bioengineered.</p>
+          </div>
+          <div class="six wide right floated column">
+            <img src="assets/images/wireframe/white-image.png" class="ui large bordered rounded image">
+          </div>
+        </div>
+        <div class="row">
+          <div class="center aligned column">
+            <a class="ui huge button">Check Them Out</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="ui vertical stripe quote segment">
+      <div class="ui equal width stackable internally celled grid">
+        <div class="center aligned row">
+          <div class="column">
+            <h3>"What a Company"</h3>
+            <p>That is what they all say about us</p>
+          </div>
+          <div class="column">
+            <h3>"I shouldn't have gone with their competitor."</h3>
+            <p>
+              <img src="assets/images/avatar/nan.jpg" class="ui avatar image"> <b>Nan</b> Chief Fun Officer Acme Toys
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="ui vertical stripe segment">
+        <div class="ui text container preview center aligned">
+          <h1 class="header">新闻 & 活动</h1>
+        </div>
+      <div class="ui text container">
+        <h3 class="ui header">Talk 14, 2017.06.14</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed rhoncus nibh magna, at pulvinar nunc vestibulum eget. Nullam justo ex, vestibulum ut nunc sit amet, scelerisque porttitor magna. Donec ut neque pellentesque, varius felis vel, vestibulum neque. Sed risus lectus, ultricies sed facilisis sed, tempus ac orci. Vivamus eleifend augue mauris, quis fringilla est lobortis ac. Sed nec augue feugiat, venenatis sem at, dictum massa. Nunc tempus nunc et ultricies interdum.</p>
+        <a class="ui large button">Read More</a>
+        <h4 class="ui horizontal header divider">
+          <a href="#">News Preview</a>
+        </h4>
+        <h3 class="ui header">Talk 14, 2017.03.14</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed rhoncus nibh magna, at pulvinar nunc vestibulum eget. Nullam justo ex, vestibulum ut nunc sit amet, scelerisque porttitor magna. Donec ut neque pellentesque, varius felis vel, vestibulum neque. Sed risus lectus, ultricies sed facilisis sed, tempus ac orci. Vivamus eleifend augue mauris, quis fringilla est lobortis ac. Sed nec augue feugiat, venenatis sem at, dictum massa. Nunc tempus nunc et ultricies interdum.</p>
+          <a class="ui large button">Read More</a>
+      </div>
+    </div>
+
+
+    <div class="ui inverted vertical footer segment">
+      <div class="ui container">
+        <div class="ui stackable inverted divided equal height stackable grid">
+          <div class="ten wide column">
+            <h4 class="ui inverted header">About OSS@LZU</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed rhoncus nibh magna, at pulvinar nunc vestibulum eget. Nullam justo ex, vestibulum ut nunc sit amet, scelerisque porttitor magna. Donec ut neque pellentesque, varius felis vel, vestibulum neque. Sed risus lectus, ultricies sed facilisis sed, tempus ac orci. Vivamus eleifend augue mauris, quis fringilla est lobortis ac. Sed nec augue feugiat, venenatis sem at, dictum massa. Nunc tempus nunc et ultricies interdum.</p>
+            <!--<div class="ui inverted link list">
+              <a href="#" class="item">Sitemap</a>
+              <a href="#" class="item">Contact Us</a>
+              <a href="#" class="item">Religious Ceremonies</a>
+              <a href="#" class="item">Gazebo Plans</a>
+            </div>-->
+          </div>
+        </div>
+
+      </div>
+      <div class="ui text container center aligned copyright">
+        <p> © 2006-2017 Lanzhou University Open Source Society All rights reserved.</p>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="grammarly-disable-indicator"></div>
+
+</body>
+
+
+</html>

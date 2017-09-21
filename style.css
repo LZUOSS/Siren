@@ -7,8 +7,16 @@
     padding: 3em;
 }
 
+.copyright {
+    margin-top: 4em;
+    margin-bottom: 2em;
+}
 .preview h1.header {
     font-size: 2.5em;
+}
+
+.heading h1 {
+    font-size: 2.4em;
 }
 /* customized */
 .hidden.menu {
