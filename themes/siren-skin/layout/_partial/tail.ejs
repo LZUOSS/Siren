@@ -1,0 +1,68 @@
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="semantic/dist/components/visibility.js"></script>
+<script src="semantic/dist/components/sidebar.js"></script>
+<script src="semantic/dist/semantic.js"></script>
+<script>
+  $(document)
+    .ready(function () {
+      $('.fixed.menu').transition('fade out');
+
+      // fix menu when passed
+      $('.masthead')
+        .visibility({
+          once: false,
+          onBottomPassed: function () {
+            $('.fixed.menu').transition('fade in');
+          },
+          onBottomPassedReverse: function () {
+            $('.fixed.menu').transition('fade out');
+          }
+        });
+
+      // create sidebar and attach to menu open
+      $('.ui.sidebar')
+        .sidebar('attach events', '.toc.item');
+
+    });
+</script>
+<script>
+  //preview-text
+  //preview-title
+  //announcement-text
+  $(function () {
+    // ads
+    console.log(
+      "wow! \n It seems you're the guy who is interested in web security or web development!\n So, Why not join us to find more fun? \n mail to :xxxx@xxx.cn!"
+    );
+
+    var len = 150; // 超過50個字以"..."取代
+    var title_len = 25;
+    var ann_len = 70;
+    //popup a info 
+    $('.quoteinfo')
+      .popup();
+
+    $(".preview-text").each(function (i) {
+      if ($(this).text().length > len) {
+        $(this).attr("title", $(this).text());
+        var text = $(this).text().substring(0, len - 1) + "...";
+        $(this).text(text);
+      }
+    });
+    $(".preview-title").each(function (i) {
+      if ($(this).text().length > title_len) {
+        $(this).attr("title", $(this).text());
+        var text = $(this).text().substring(0, title_len - 1) + "...";
+        $(this).text(text);
+      }
+    });
+    $(".announcement-text").each(function (i) {
+      if ($(this).text().length > ann_len) {
+        $(this).attr("title", $(this).text());
+        var text = $(this).text().substring(0, ann_len - 1) + "...";
+        $(this).text(text);
+      }
+    });
+  });
+</script>
+</html>
