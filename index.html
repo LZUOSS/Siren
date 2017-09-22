@@ -1,7 +1,5 @@
-<!doctype html>
-
+<!DOCTYPE html>
 <html lang="zh">
-
 <head>
   <meta charset="utf-8">
   <title>OSS-LZU | 兰州大学开源社区</title>
@@ -9,34 +7,8 @@
   <meta name="author" content="Huzi Cheng @OSS-LZU">
   <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.css">
   <link rel="stylesheet" type="text/css" href="style.css">
-  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-  <script src="semantic/dist/components/visibility.js"></script>
-  <script src="semantic/dist/components/sidebar.js"></script>
-  <script src="semantic/dist/semantic.js"></script>
-  <script>
-    $(document)
-      .ready(function () {
-        $('.fixed.menu').transition('fade out');
-
-        // fix menu when passed
-        $('.masthead')
-          .visibility({
-            once: false,
-            onBottomPassed: function () {
-              $('.fixed.menu').transition('fade in');
-            },
-            onBottomPassedReverse: function () {
-              $('.fixed.menu').transition('fade out');
-            }
-          });
-
-        // create sidebar and attach to menu open
-        $('.ui.sidebar')
-          .sidebar('attach events', '.toc.item');
-
-      });
-  </script>
 </head>
+
 
 <body>
   <!-- Following Menu -->
@@ -287,7 +259,33 @@
   <div class="grammarly-disable-indicator"></div>
 
 </body>
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="semantic/dist/components/visibility.js"></script>
+<script src="semantic/dist/components/sidebar.js"></script>
+<script src="semantic/dist/semantic.js"></script>
+<script>
+  $(document)
+    .ready(function () {
+      $('.fixed.menu').transition('fade out');
 
+      // fix menu when passed
+      $('.masthead')
+        .visibility({
+          once: false,
+          onBottomPassed: function () {
+            $('.fixed.menu').transition('fade in');
+          },
+          onBottomPassedReverse: function () {
+            $('.fixed.menu').transition('fade out');
+          }
+        });
+
+      // create sidebar and attach to menu open
+      $('.ui.sidebar')
+        .sidebar('attach events', '.toc.item');
+
+    });
+</script>
 <script>
   //preview-text
   //preview-title
